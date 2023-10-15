@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-bar{
+    box-shadow: -5px 3px 20px black;
+    position: sticky;
+    top: 0;
+    opacity: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 0 1rem;
+}
+.logo .fa-calculator{
+    font-size: x-large;
+    margin: 0 .5rem;
+}
+.logo span{
+    color: #a74f08;
+    font-size: 1.5rem;
+}
+.owner{
+    border-radius: 50%;
+    background-color: #a74f08;
+    color: black;
+    padding: .5rem .7rem;
+    margin: .5rem 1.5rem;
+}
+.owner .fa-user{
+    font-size: 1.5rem;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbdb;
+}
+.container {
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+}
+#toolbox {
+    background-color: #c0a9a9;
+    padding: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    flex-wrap: wrap ;
+    align-items: center;
+}
+#editor{
+    border: 1px solid black;
+    padding: 1rem;
+    width: 100%;
+    min-height: 50vh;
+    outline: none;
+}
+.action-btn{
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.link-btn{
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid black;
+}
+.action-i{
+    font-size: 1rem;
+}
+.link-i{
+    font-size: 1rem;
+}
+#editor a {
+    cursor: pointer;
+}
+
+.count{
+    background-color: #c0a9a9;
+    display: flex;
+    justify-content: center;
+}
+.counter{
+    padding: 5px;
+    margin: 0px;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .logo .fa-calculator{
+        font-size: 1.2rem;
+    }
+    .logo span{
+        font-size: 1.2rem;
+    }
+    .owner .fa-user{
+        font-size: 1rem;
+    }
+    .owner p{
+        font-size: .5rem;
+    }
+    .slogan p{
+        font-size: .7rem;
+    }
+
+    .container {
+        padding: 1rem 2rem;
+    }
+    #toolbox {
+        padding: 8px;
+    }
+    .action-btn{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .action-i{
+        font-size: .8rem;
+    }
+    .count{
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .and{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="Files/style.css">
+    <title>RC Text Editor</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="logo"> 
+            <i class="fa-solid fa-calculator"></i>
+            <span>RC TextEditor</span>
+        </div>
+        <div class="slogan"><p>Free app for Editing Text</p></div>
+        <a class="owner" href="https://rohitcodes1504.netlify.app/" target="_blank">
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </header>
+
+    <div class="container">
+        <div id="toolbox">
+            <button title="Bold" onclick="bold()" class="active-btn action-btn" id="boldButton"><i class="action-i fa-solid fa-bold"></i></button>
+            <button title="Italic" onclick="italic()" class="active-btn action-btn"><i class="action-i fa-solid fa-italic"></i></button>
+            <button title="Underline" onclick="underline()" class="active-btn action-btn"><i class="action-i fa-solid fa-underline"></i></button>
+            <button title="Align left" onclick="alignLeft()" class="action-btn"><i class="action-i fa-solid fa-align-left"></i></button>
+            <button title="Align center" onclick="alignCenter()" class="action-btn"><i class="action-i fa-solid fa-align-center"></i></button>
+            <button title="Align right" onclick="alignRight()" class="action-btn"><i class="action-i fa-solid fa-align-right"></i></button>
+            <button title="Justify" onclick="alignJustify()" class="action-btn"><i class="action-i fa-solid fa-align-justify"></i></button>
+            <button title="Decrease Indent" onclick="outdent()" class="action-btn"><i class="action-i fa-solid fa-outdent"></i></button>
+            <button title="Increase Indent" onclick="indent()" class="action-btn"><i class="action-i fa-solid fa-indent"></i></button>
+            <button title="insert Link" onclick="insertLink()" class="link-btn"><i class="link-i fa-solid fa-link"></i></button>
+
+        </div>
+
+        <div id="editor" contenteditable="true" aria-placeholder="Start typing here..."></div>
+        <div class="count">
+            <p class="counter"><span id="word">0</span> Words </p>
+            <p class="counter and">&</p>
+            <p class="counter"> <span id="char">0</span> Characters</p>
+        </div>
+    </div>
+  <script src="Files/script.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
