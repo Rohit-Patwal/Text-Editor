@@ -1,2 +1,4 @@
 # Text-Editor
-This Text Editor Created using html, css and js
+i Created this text editer on my Final year of Bca
+
+LIVE: https://rc-text-editor.netlify.app/
